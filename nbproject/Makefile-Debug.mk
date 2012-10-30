@@ -39,7 +39,9 @@ OBJECTFILES= \
 	${OBJECTDIR}/src/BoardColumn.o \
 	${OBJECTDIR}/src/Checker.o \
 	${OBJECTDIR}/src/Dice.o \
-	${OBJECTDIR}/Include/Bitmap.o
+	${OBJECTDIR}/Include/Bitmap.o \
+	${OBJECTDIR}/Include/Game.o \
+	${OBJECTDIR}/src/StatusBar.o
 
 
 # C Compiler Flags
@@ -95,6 +97,16 @@ ${OBJECTDIR}/Include/Bitmap.o: Include/Bitmap.cpp
 	${MKDIR} -p ${OBJECTDIR}/Include
 	${RM} $@.d
 	$(COMPILE.cc) -g -I. -MMD -MP -MF $@.d -o ${OBJECTDIR}/Include/Bitmap.o Include/Bitmap.cpp
+
+${OBJECTDIR}/Include/Game.o: Include/Game.cpp 
+	${MKDIR} -p ${OBJECTDIR}/Include
+	${RM} $@.d
+	$(COMPILE.cc) -g -I. -MMD -MP -MF $@.d -o ${OBJECTDIR}/Include/Game.o Include/Game.cpp
+
+${OBJECTDIR}/src/StatusBar.o: src/StatusBar.cpp 
+	${MKDIR} -p ${OBJECTDIR}/src
+	${RM} $@.d
+	$(COMPILE.cc) -g -I. -MMD -MP -MF $@.d -o ${OBJECTDIR}/src/StatusBar.o src/StatusBar.cpp
 
 # Subprojects
 .build-subprojects:

@@ -1,4 +1,5 @@
-#pragma once
+#ifndef BITMAP_DEFINED
+#define BITMAP_DEFINED
 
 // Bitmap header definitions
 #pragma pack(push,2) // Disable automatic alignment of structure fields
@@ -48,3 +49,5 @@ private:
   int dataSize;
   bool loadBitmap(char* filename);
 };
+
+#endif

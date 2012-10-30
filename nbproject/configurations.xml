@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<configurationDescriptor version="79">
+<configurationDescriptor version="80">
   <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
     <logicalFolder name="HeaderFiles"
                    displayName="Header Files"
@@ -10,6 +10,8 @@
         <itemPath>Include/BoardColumn.h</itemPath>
         <itemPath>Include/Checker.h</itemPath>
         <itemPath>Include/Dice.h</itemPath>
+        <itemPath>Include/Game.h</itemPath>
+        <itemPath>Include/StatusBar.h</itemPath>
         <itemPath>Include/Tools.h</itemPath>
       </logicalFolder>
     </logicalFolder>
@@ -27,7 +29,9 @@
         <itemPath>src/BoardColumn.cpp</itemPath>
         <itemPath>src/Checker.cpp</itemPath>
         <itemPath>src/Dice.cpp</itemPath>
+        <itemPath>Include/Game.cpp</itemPath>
         <itemPath>src/Main.cpp</itemPath>
+        <itemPath>src/StatusBar.cpp</itemPath>
       </logicalFolder>
     </logicalFolder>
     <logicalFolder name="ExternalFiles"

@@ -18,7 +18,6 @@ Bitmap::~Bitmap()
     delete data;
 }
 
-/** Reads bitmap image in memory. */
 bool Bitmap::loadBitmap(char* filename)
 {
   FILE* file;
